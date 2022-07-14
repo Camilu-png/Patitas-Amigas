@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
           title: Text("Home"),
         ),
         body: Center(
-          child: Text("Walcome, Camilú"),
+          child: Text("Welcome, Camilú"),
         ),
       )//const MyHomePage(title: 'Flutter Demo Home Page'),
     );

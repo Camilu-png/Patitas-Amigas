@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,19 +23,14 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.lightGreen,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Home"),
+          leading: Icon(Icons.pets),
+          title: Text('Home'),
         ),
-        body: Center(
-          child: Text(
-              "Welcome, Camilú",
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(fontWeight: FontWeight.bold)
-          ),
-        ),
+        body: new DescriptionPlace(),
       )//const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

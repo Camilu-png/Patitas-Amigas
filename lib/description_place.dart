@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/main.dart';
+import 'button_green.dart';
 
 class DescriptionPlace extends StatelessWidget{
   @override
@@ -170,12 +171,14 @@ class DescriptionPlace extends StatelessWidget{
           right: 20.0
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             name,
           size,
             friendly,
             age,
-            description
+            description,
+            ButtonGreen("Seguir buscando")
         ]
       ),
     );

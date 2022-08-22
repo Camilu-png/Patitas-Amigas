@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 class GodParent extends StatelessWidget{
+
+  String pathImage;
+  String name;
+
+  GodParent(this.pathImage, this.name);
   @override
   Widget build(BuildContext context){
     final avatar = Container(
@@ -15,7 +20,7 @@ class GodParent extends StatelessWidget{
       ),
     );
 
-    final name = Container(
+    final userName = Container(
         margin: const EdgeInsets.only(
             left: 20.0,
             right: 15.0
@@ -23,8 +28,8 @@ class GodParent extends StatelessWidget{
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          const Text(
-              "Camilú",
+          Text(
+              name,
             style: TextStyle(
                 fontFamily: "Poppins",
                 fontSize: 15.0,
@@ -33,18 +38,53 @@ class GodParent extends StatelessWidget{
           ),
           Row(
             children: const <Widget>[
-              Text("5 ahijados"),
-              Text("1 activo")
+              Text(
+                  "5 ahijados ",
+                style: TextStyle(
+                    fontFamily: "Poppins",
+                    fontSize: 11.0,
+                    fontWeight: FontWeight.w100
+                ),
+              ),
+              Text(
+                  "- 1 activo",
+                  style: TextStyle(
+                  fontFamily: "Poppins",
+                  fontSize: 11.0,
+                  fontWeight: FontWeight.w100
+              ),
+              )
             ],
           )
         ],
       )
     );
-    return Row(
+    final godParent = Row(
       children: <Widget>[
         avatar,
-        name
+        userName
       ],
+    );
+
+    return Container(
+        margin: const EdgeInsets.only(
+        left: 20.0,
+        right: 15.0
+    ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
+        "Padrinos",
+        style: TextStyle(
+            fontFamily: "Poppins",
+            fontSize: 15.0,
+            fontWeight: FontWeight.w600
+        ),
+      ),
+          godParent
+        ]
+      )
     );
   }
 }

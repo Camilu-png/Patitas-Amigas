@@ -5,7 +5,7 @@ class DescriptionPlace extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     final star  = Container(
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
         right: 3.0
       ),
       child: Icon(
@@ -14,12 +14,12 @@ class DescriptionPlace extends StatelessWidget{
       ),
     );
 
-    final not_star =
+    final notStar =
     Container(
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
           right: 3.0
       ),
-      child: Icon(
+      child: const Icon(
         Icons.pets,
         color: Color(0x592F9A3A),
       ),
@@ -29,12 +29,12 @@ class DescriptionPlace extends StatelessWidget{
     Align(
         alignment: Alignment.centerLeft,
         child: Container(
-          margin: EdgeInsets.only(
-              left: 20.0,
+          margin: const EdgeInsets.only(
+              left: 10.0,
               right: 20.0,
               bottom: 20.0
           ),
-          child: Text(
+          child: const Text(
             "Vaquita",
             style: TextStyle(
               fontFamily: "Poppins",
@@ -52,11 +52,11 @@ class DescriptionPlace extends StatelessWidget{
         Row(
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(
-                    left: 20.0,
+                margin: const EdgeInsets.only(
+                    left: 10.0,
                     right: 15.0
                 ),
-                child: Text(
+                child: const Text(
                   "Tamaño    ",
                   style: TextStyle(
                       fontFamily: "Poppins",
@@ -71,7 +71,7 @@ class DescriptionPlace extends StatelessWidget{
                   star,
                   star,
                   star,
-                  not_star
+                  notStar
                 ],
               ),
             ]
@@ -85,12 +85,12 @@ class DescriptionPlace extends StatelessWidget{
           Row(
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.only(
+                  margin: const EdgeInsets.only(
                       top: 5.0,
-                      left: 20.0,
+                      left: 10.0,
                       right: 20.0
                   ),
-                  child: Text(
+                  child: const Text(
                     "Hogareño",
                     style: TextStyle(
                         fontFamily: "Poppins",
@@ -118,12 +118,12 @@ class DescriptionPlace extends StatelessWidget{
           Row(
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.only(
+                  margin: const EdgeInsets.only(
                     top: 5.0,
-                      left: 20.0,
+                      left: 10.0,
                       right: 20.0
                   ),
-                  child: Text(
+                  child: const Text(
                     "Edad         ",
                     style: TextStyle(
                         fontFamily: "Poppins",
@@ -137,8 +137,8 @@ class DescriptionPlace extends StatelessWidget{
                     star,
                     star,
                     star,
-                    not_star,
-                    not_star
+                    notStar,
+                    notStar
                   ],
                 ),
               ]
@@ -148,12 +148,12 @@ class DescriptionPlace extends StatelessWidget{
 
     final description =
         Container(
-          margin: EdgeInsets.only(
+          margin: const EdgeInsets.only(
             top: 10.0,
-            left: 20.0,
-            right: 20.0
+            left: 10.0,
+            right: 10.0
           ),
-          child: Text(
+          child: const Text(
             "Fue encontrado en cerro Placeres castrado, con una herida en la pata delantera y muchas pulgas. Después de una visita al veterinario y ya recuperado encontró hogar en Viña del Mar.",
             style: TextStyle(
               fontFamily: "Poppins",
@@ -162,11 +162,11 @@ class DescriptionPlace extends StatelessWidget{
           ),
         );
 
-    final title_stars =
+    final titleStars =
     Container(
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
           top: 320.0,
-          left: 20.0,
+          left: 10.0,
           right: 20.0
       ),
       child: Column(
@@ -180,6 +180,6 @@ class DescriptionPlace extends StatelessWidget{
       ),
     );
 
-    return title_stars;
+    return titleStars;
   }
 }

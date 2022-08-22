@@ -66,6 +66,9 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - android/assets/img/perfil.jpg
+    - android/assets/img/luther.jpg
+    - android/assets/img/pose.jpg
+    - android/assets/img/rayo.jpg
 
   fonts:
     - family: Poppins

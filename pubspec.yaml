@@ -69,6 +69,8 @@ flutter:
     - android/assets/img/luther.jpg
     - android/assets/img/pose.jpg
     - android/assets/img/rayo.jpg
+    - android/assets/img/Vaquita.jpg
+    - android/assets/img/VaquitaSeguimiento.jpg
 
   fonts:
     - family: Poppins

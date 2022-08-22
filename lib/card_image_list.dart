@@ -11,8 +11,8 @@ class CardImageList extends StatelessWidget{
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           CardImage("android/assets/img/pose.jpg"),
-          CardImage("android/assets/img/rayo.jpg"),
-          CardImage("android/assets/img/luther.jpg"),
+          CardImage("android/assets/img/Vaquita.jpg"),
+          CardImage("android/assets/img/VaquitaSeguimiento.jpg"),
         ],
       ),
     );

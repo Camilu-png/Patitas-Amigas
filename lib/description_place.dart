@@ -165,7 +165,7 @@ class DescriptionPlace extends StatelessWidget{
     final titleStars =
     Container(
       margin: const EdgeInsets.only(
-          top: 320.0,
+          top: 350.0,
           left: 10.0,
           right: 20.0
       ),

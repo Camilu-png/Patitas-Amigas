@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'godparent.dart';
+import 'package:flutter/services.dart';
+import 'header_appbar.dart';
 
 class Palette {
   static const MaterialColor kToDark = const MaterialColor(
@@ -26,10 +28,15 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(
+            statusBarColor: Colors.transparent
+          //color set to transperent or set your own color
+        )
+    );
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -37,26 +44,23 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           resizeToAvoidBottomInset: false,
-        appBar: AppBar(
-          leading: Icon(
-            Icons.pets,
-          color: Palette.kToDark.shade700,
-          ),
-          title: Text('Adoptados'),
-        ),
-        body: ListView(
+        body: Stack(
+          children: <Widget>[
+            ListView(
             shrinkWrap: true,
             padding: const EdgeInsets.all(20.0),
-          children: <Widget>[
-            new DescriptionPlace(),
-            new GodParent(),
-    ]
-        ))
+            children: <Widget>[
+              DescriptionPlace(),
+              GodParent("android/assets/img/perfil.jpg", "Camila Arancibia"),
+            ]
+        ),
+            HeaderAppBar()
+          ],
+        )
+      )
     );
   }
 }
-//new DescriptionPlace(),
-//               new GodParent(),
 
 
 class MyHomePage extends StatefulWidget {

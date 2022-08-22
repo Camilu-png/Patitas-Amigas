@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/main.dart';
 
 class DescriptionPlace extends StatelessWidget{
   @override
@@ -9,7 +10,7 @@ class DescriptionPlace extends StatelessWidget{
       ),
       child: Icon(
         Icons.pets,
-        color: Color(0xEB2F9A3A),
+        color: Palette.kToDark.shade200,
       ),
     );
 
@@ -36,6 +37,7 @@ class DescriptionPlace extends StatelessWidget{
           child: Text(
             "Vaquita",
             style: TextStyle(
+              fontFamily: "Poppins",
                 fontSize: 30.0,
                 fontWeight: FontWeight.w900
             ),
@@ -52,12 +54,13 @@ class DescriptionPlace extends StatelessWidget{
               Container(
                 margin: EdgeInsets.only(
                     left: 20.0,
-                    right: 20.0
+                    right: 15.0
                 ),
                 child: Text(
                   "Tamaño    ",
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontFamily: "Poppins",
+                      fontSize: 18.0,
                       fontWeight: FontWeight.w900
                   ),
                 ),
@@ -76,7 +79,7 @@ class DescriptionPlace extends StatelessWidget{
       ]
     );
 
-    final amistoso =
+    final friendly =
     Column(
         children: <Widget>[
           Row(
@@ -90,7 +93,8 @@ class DescriptionPlace extends StatelessWidget{
                   child: Text(
                     "Hogareño",
                     style: TextStyle(
-                        fontSize: 20.0,
+                        fontFamily: "Poppins",
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w900
                     ),
                   ),
@@ -122,7 +126,8 @@ class DescriptionPlace extends StatelessWidget{
                   child: Text(
                     "Edad         ",
                     style: TextStyle(
-                        fontSize: 20.0,
+                        fontFamily: "Poppins",
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w900
                     ),
                   ),
@@ -151,9 +156,9 @@ class DescriptionPlace extends StatelessWidget{
           child: Text(
             "Fue encontrado en cerro Placeres castrado, con una herida en la pata delantera y muchas pulgas. Después de una visita al veterinario y ya recuperado encontró hogar en Viña del Mar.",
             style: TextStyle(
+              fontFamily: "Poppins",
                 fontSize: 16.0,
             ),
-            textAlign: TextAlign.justify,
           ),
         );
 
@@ -168,7 +173,7 @@ class DescriptionPlace extends StatelessWidget{
           children: <Widget>[
             name,
           size,
-          amistoso,
+            friendly,
             age,
             description
         ]

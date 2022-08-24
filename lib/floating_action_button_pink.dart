@@ -16,7 +16,7 @@ class _FloatingActionButtonPink extends State<FloatingActionButtonPink>{
     });
       ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: this._pressed ? Text("Adoptar") : Text("Cancelar adopción"),
+            content: this._pressed ? Text("Añadido a favoritos") : Text("Eliminado de favoritos"),
           )
       );
   }

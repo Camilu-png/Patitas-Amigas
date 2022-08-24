@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/main.dart';
 
 class GradientBack extends StatelessWidget{
-  String title = "Adoptados";
+  String title;
 
   GradientBack(this.title);
   @override

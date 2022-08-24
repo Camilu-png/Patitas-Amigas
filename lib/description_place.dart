@@ -171,14 +171,13 @@ class DescriptionPlace extends StatelessWidget{
           right: 20.0
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             name,
           size,
             friendly,
             age,
             description,
-            ButtonGreen("Seguir buscando")
+            ButtonGreen("Adoptar ")
         ]
       ),
     );

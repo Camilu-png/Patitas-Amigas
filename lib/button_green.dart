@@ -12,7 +12,7 @@ class ButtonGreen extends StatelessWidget{
       onTap: () {
         ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
-              content: const Text("Buscando . . ."),
+              content: const Text("Abriendo el formulario"),
             )
         );
       },
@@ -24,7 +24,7 @@ class ButtonGreen extends StatelessWidget{
           bottom: 20.0,
         ),
         height: 50.0,
-        width: 180.0,
+        width: 250.0,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30.0),
             gradient: LinearGradient(
@@ -42,13 +42,22 @@ class ButtonGreen extends StatelessWidget{
         ),
 
         child: Center(
-          child: Text(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
             buttonText,
             style: const TextStyle(
-                fontSize: 18.0,
-                fontFamily: "Lato",
-                color: Colors.white,
+              fontSize: 18.0,
+              fontFamily: "Lato",
+              color: Colors.white,
             ),
+          ),
+              Icon(
+                Icons.pets,
+                color: Colors.white,
+              ),
+            ]
 
           ),
         ),

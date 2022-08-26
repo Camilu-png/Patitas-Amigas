@@ -4,7 +4,7 @@ import 'description_place.dart';
 import 'godparent.dart';
 import 'header_appbar.dart';
 
-class Profile extends StatelessWidget{
+class PetProfile extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Stack(

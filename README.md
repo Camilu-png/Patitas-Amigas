@@ -1,16 +1,5 @@
-# platzi_trips_app
+# Patitas Amigas APP
 
-A new Flutter project.
+¡Bienvenido a mi proyecto personal con Flutter!
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Por ahora estoy realizando una aplicación que te permita adoptar a animales de la zona que estén buscando un nuevo hogar. Esto permitirá facilitar la búsqueda dependiendo de la zona en la que estés. Aunque por ahora el producto mínimo viable es poder realizar publicaciones y que la gente a través de un botón adoptar pueda realizar una encuesta que le permita al padrino del animal saber si el adoptante es el indicado.

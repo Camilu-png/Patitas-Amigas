@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/main.dart';
 import 'home_adoption.dart';
-import 'profile.dart';
+import 'pet_profile.dart';
 
 class BrowserBar extends StatefulWidget{
   @override
@@ -14,7 +14,7 @@ class _BrowserBar extends State<BrowserBar>{
   int indexTap = 0;
   final List<Widget> widgetsChildren =[
     HomeAdoption(),
-    Profile(),
+    PetProfile(),
   ];
   void onTapTapped(int index){
     setState((){

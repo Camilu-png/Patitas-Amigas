@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'paw_adoption.dart';
+import 'browser_bar.dart';
 import 'package:flutter/services.dart';
 
 class Palette {
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Palette.kToDark,
       ),
-      home: PawAdoption()
+      home: BrowserBar()
     );
   }
 }

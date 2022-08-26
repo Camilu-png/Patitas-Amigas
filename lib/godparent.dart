@@ -71,20 +71,8 @@ class GodParent extends StatelessWidget{
         left: 20.0,
         right: 15.0
     ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text(
-        "Padrinos",
-        style: TextStyle(
-            fontFamily: "Poppins",
-            fontSize: 15.0,
-            fontWeight: FontWeight.w600
-        ),
-      ),
-          godParent
-        ]
-      )
+      child: godParent
+
     );
   }
 }

@@ -3,14 +3,14 @@ import 'package:platzi_trips_app/main.dart';
 import 'home_adoption.dart';
 import 'profile.dart';
 
-class PawAdoption extends StatefulWidget{
+class BrowserBar extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
-   return _PawAdoption();
+   return _BrowserBar();
   }
 }
 
-class _PawAdoption extends State<PawAdoption>{
+class _BrowserBar extends State<BrowserBar>{
   int indexTap = 0;
   final List<Widget> widgetsChildren =[
     HomeAdoption(),

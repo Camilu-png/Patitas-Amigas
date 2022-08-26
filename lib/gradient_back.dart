@@ -27,7 +27,7 @@ class GradientBack extends StatelessWidget{
               color: Colors.white,
             fontSize: 25.0,
             fontFamily: "Poppins",
-            fontWeight: FontWeight.bold
+            fontWeight: FontWeight.bold,
       ),
       ),
       alignment: Alignment(-0.9, -0.6),

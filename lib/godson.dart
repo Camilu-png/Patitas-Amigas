@@ -46,8 +46,13 @@ class GodSon extends StatelessWidget{
     
     final description = Container(
       height: 50.0,
-      color: Colors.white,
-      padding: const EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(12.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.only(
+            bottomRight: Radius.circular(10.0),
+            bottomLeft: Radius.circular(10.0)),
+        color: Colors.white,
+        ),
       child: Row(
         children: [
           Text(
@@ -75,7 +80,7 @@ class GodSon extends StatelessWidget{
         borderRadius: BorderRadius.circular(12),
         boxShadow: <BoxShadow>[
           BoxShadow(
-              color: Color(0xFA6A6A6FF),
+              color: Colors.black26,
               blurRadius: 10.0,
               offset: Offset(0.0,4.0)
           )
@@ -83,9 +88,9 @@ class GodSon extends StatelessWidget{
       ),
       padding: const EdgeInsets.all(5.0),
       margin: const EdgeInsets.only(
-          top: 20.0,
           left: 20.0,
-          right: 20.0
+          right: 20.0,
+        bottom: 20.0
       ),
 
       child: Column(

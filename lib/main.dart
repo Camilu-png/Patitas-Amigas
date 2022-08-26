@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'godparent.dart';
+import 'paw_adoption.dart';
 import 'package:flutter/services.dart';
-import 'header_appbar.dart';
 
 class Palette {
   static const MaterialColor kToDark = const MaterialColor(
@@ -42,22 +40,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Palette.kToDark,
       ),
-      home: Scaffold(
-          resizeToAvoidBottomInset: false,
-        body: Stack(
-          children: <Widget>[
-            ListView(
-            shrinkWrap: true,
-            padding: const EdgeInsets.all(20.0),
-            children: <Widget>[
-              DescriptionPlace(),
-              GodParent("android/assets/img/perfil.jpg", "Camila Arancibia"),
-            ]
-        ),
-            HeaderAppBar()
-          ],
-        )
-      )
+      home: PawAdoption()
     );
   }
 }

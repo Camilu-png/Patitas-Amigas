@@ -8,7 +8,7 @@ class ButtonGreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return Material(child: InkWell(
       onTap: () {
         ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
@@ -63,7 +63,7 @@ class ButtonGreen extends StatelessWidget{
         ),
 
       ),
-    );
+    ));
   }
 
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/main.dart';
+import 'package:platzi_trips_app/pet_profile.dart';
+import 'pet_profile.dart';
 
 class GodSon extends StatelessWidget{
 
@@ -75,30 +77,34 @@ class GodSon extends StatelessWidget{
       ),
     );
 
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        boxShadow: <BoxShadow>[
-          BoxShadow(
-              color: Colors.black26,
-              blurRadius: 10.0,
-              offset: Offset(0.0,4.0)
-          )
-        ],
-      ),
-      padding: const EdgeInsets.all(5.0),
-      margin: const EdgeInsets.only(
-          left: 20.0,
-          right: 20.0,
-        bottom: 20.0
-      ),
-
-      child: Column(
-        children: <Widget>[
-          picture,
-          description
-        ],
-      ),
+    return GestureDetector(
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> PetProfile(name)));
+          },
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: <BoxShadow>[
+              BoxShadow(
+                  color: Colors.black26,
+                  blurRadius: 10.0,
+                  offset: Offset(0.0,4.0)
+              )
+            ],
+          ),
+          padding: const EdgeInsets.all(5.0),
+          margin: const EdgeInsets.only(
+              left: 20.0,
+              right: 20.0,
+              bottom: 20.0
+          ),
+          child: Column(
+            children: <Widget>[
+              picture,
+              description
+            ],
+          ),
+        )
     );
   }
 }

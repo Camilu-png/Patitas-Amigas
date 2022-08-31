@@ -89,7 +89,7 @@ class GodparentProfile extends StatelessWidget{
             shrinkWrap: true,
             padding: const EdgeInsets.all(20.0),
             children: <Widget>[
-              DescriptionPlace(),
+              DescriptionPlace("name"),
               GodParent("android/assets/img/perfil.jpg", "Camila Arancibia"),
             ]
         ),

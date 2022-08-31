@@ -3,6 +3,10 @@ import 'package:platzi_trips_app/main.dart';
 import 'button_green.dart';
 
 class DescriptionPlace extends StatelessWidget{
+
+  String name;
+
+  DescriptionPlace(this.name);
   @override
   Widget build(BuildContext context){
     final star  = Container(
@@ -26,7 +30,7 @@ class DescriptionPlace extends StatelessWidget{
       ),
     );
 
-    final name =
+    final title =
     Align(
         alignment: Alignment.centerLeft,
         child: Container(
@@ -35,8 +39,8 @@ class DescriptionPlace extends StatelessWidget{
               right: 20.0,
               bottom: 20.0
           ),
-          child: const Text(
-            "Vaquita",
+          child: Text(
+            name,
             style: TextStyle(
               fontFamily: "Poppins",
                 fontSize: 30.0,
@@ -170,15 +174,16 @@ class DescriptionPlace extends StatelessWidget{
           left: 10.0,
           right: 20.0
       ),
-      child: Column(
+      child: Material(child:Column(
           children: <Widget>[
-            name,
+            title,
           size,
             friendly,
             age,
             description,
-            ButtonGreen("Adoptar ")
+            ButtonGreen("Adoptar "),
         ]
+      ),
       ),
     );
 

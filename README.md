@@ -6,6 +6,9 @@ Por ahora estoy realizando una aplicación que te permita adoptar a animales de 
 
 ## Página principal
 
+El Home de la aplicación en la que se muestran todos los animales que están listos para dar en adopción, mostrando su información básica como su nombre, sexo y ciudad. 
+Al momento de hacer click en cualquier imagen te llevará al perfil del animal donde podrás adoptarlo.
+
 ![Home](https://i.imgur.com/vIZXFZl.jpg)
 
 ## Perfil

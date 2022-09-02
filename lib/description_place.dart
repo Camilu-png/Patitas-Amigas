@@ -174,16 +174,17 @@ class DescriptionPlace extends StatelessWidget{
           left: 10.0,
           right: 20.0
       ),
-      child: Material(child:Column(
-          children: <Widget>[
-            title,
-          size,
-            friendly,
-            age,
-            description,
-            ButtonGreen("Adoptar "),
-        ]
-      ),
+      child: Material(
+        child:Column(
+            children: <Widget>[
+              title,
+              size,
+              friendly,
+              age,
+              description,
+              ButtonGreen("Adoptar "),
+            ]
+        ),
       ),
     );
 

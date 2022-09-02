@@ -64,6 +64,7 @@ class GodSon extends StatelessWidget{
               fontSize: 16.0,
             ),
           ),
+          gender == "macho" ? male : female,
           Spacer(),
           Text(
               city,
@@ -71,8 +72,7 @@ class GodSon extends StatelessWidget{
               fontFamily: "Poppins",
               fontSize: 15.0,
             ),
-          ),
-          gender == "macho" ? male : female,
+          )
         ],
       ),
     );

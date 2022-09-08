@@ -13,7 +13,8 @@ Al momento de hacer click en cualquier imagen te llevará al perfil del animal d
 
 ## Perfil
 
-El perfil del animal muestra sus mejores fotos y un botón en forma de corazón que permite al usuario guardarlo como favorito en caso en que desee adoptarlo, pero todavía no está seguro.
-Muestra su nombre, el tamaño, hogareño y edad. Además de una breve descripción de su caso, un botón para adoptarlo que llevará a un formulario y más abajo se muestra al encargado de la adopción de ese animal.
+El perfil del animal muestra sus mejores fotos y un botón en forma de corazón que permite al usuario guardarlo como favorito en caso en que desee adoptarlo, pero todavía no está seguro. Proximamente los animales que haya guardado como favoritos los podrá ver en su perfil de usuario.
+
+También se puede ver su nombre, el tamaño, si es hogareño y su edad. Además de una breve descripción de su caso, un botón para adoptarlo que llevará a un formulario y más abajo se muestra al encargado de la adopción de ese animal.
 
 ![Perfil](https://i.imgur.com/QajYoTL.jpg)
